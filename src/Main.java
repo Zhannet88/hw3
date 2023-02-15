@@ -4,6 +4,10 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+        task6();
+        task7();
+        task8();
 
     }
 
@@ -70,4 +74,69 @@ public class Main {
         System.out.println ("За 3 дня машина произвела " + bInTime3 + " штук бутылок");
         System.out.println ("За месяц машина произвела " + bInTime4 + " штук бутылок");
     }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        byte banok = 120;
+        byte white = 2;
+        byte brown = 4;
+        int banokNaClass = white + brown;
+        int classov = banok/banokNaClass;
+        int white1 = classov * white;
+        int brown2 = classov * brown;
+        System.out.println ("В школе, где " + classov + " классов, нужно " + white1 + " банок белой краски и " + brown2 + " банок коричневой краски");
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        byte bananos = 5;
+        byte gBananos = 80;
+        int gB = bananos * gBananos;
+        int milk = 200;
+        byte gMilk = 105;
+        int gM = milk * gMilk;
+        byte plombir = 2;
+        byte gPlombir = 100;
+        int gP = plombir * gPlombir;
+        byte eggs = 4;
+        byte gEggs = 70;
+        int gE = eggs * gEggs;
+        int vesG = gB + gE + gP + gM;
+        int vesKG = vesG / 1000;
+        System.out.println ("Вес спортзавтрака в " + vesG + " граммах");
+        System.out.println ("Вес спортзавтрака в " + vesKG + " килограммах");
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int ves = 7000;
+        int ves1 = 250;
+        int ves2 = 500;
+        int dV1 = ves/ves1;
+        int dV2 = ves/ves2;
+        int dVsego = dV1+dV2;
+        int dSredne = dVsego/2;
+        System.out.println (dV1 + " дней, если употреблять по 250 грамм");
+        System.out.println (dV2 + " дней, если употреблять по 500 грамм");
+        System.out.println (dSredne + " день в среднем");
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int masha = 67760;
+        int denis = 83690;
+        int kris = 76230;
+        int masha2 = masha + masha/10;
+        int denis2 = denis + denis/10;
+        int kris2 = kris + kris/10;
+        int mGod = masha2*12 - masha*12;
+        int dGod = denis2*12 - denis*12;
+        int kGod = kris2*12 - kris*12;
+        System.out.println ("Маша теперь получает " +masha2+ " рублей. Годовой доход вырос на "+ mGod+ " рублей");
+        System.out.println ("Денис теперь получает " +denis2+ " рублей. Годовой доход вырос на "+ dGod+ " рублей");
+        System.out.println ("Кристина теперь получает " +kris2+ " рублей. Годовой доход вырос на "+ kGod+ " рублей");
+    }
+
+
+
 }
